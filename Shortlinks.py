@@ -54,7 +54,7 @@ shr = requests.post(url=url, headers=headers, data=data)
 if "You can make sure, it's properly working by" in shr.text:
     shortned_link = 'https://v.ht/' + name_link
     print("[x] it's successfully shortned !")
-    print(f"[x] your link is [{shortned_link}] , Enjoy !')
+    print(f"[x] your link is [{shortned_link}] , Enjoy !")
     input("[x] Prees Enter to exit !")
     exit()
 elif 'oops errormsg' in shr.text:
